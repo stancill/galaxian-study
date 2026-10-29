@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GALAXIAN — Study Rebuild (1979 mechanics tribute)</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; background: #0a0a12; color: #cfcfe8;
+    font-family: "Courier New", monospace; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  header { margin: 18px 0 8px; text-align: center; }
+  header h1 { font-size: 15px; letter-spacing: 4px; margin: 0; color: #efe9c0; }
+  header p  { font-size: 11px; margin: 4px 0 0; color: #6a6a90; }
+  canvas {
+    width: min(448px, 92vw);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: #000;
+    border: 2px solid #26264a;
+    border-radius: 4px;
+  }
+  footer { margin: 12px 0 20px; font-size: 11px; color: #6a6a90; text-align: center; line-height: 1.7; }
+  footer b { color: #9d9dc4; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>GALAXIAN — STUDY REBUILD</h1>
+    <p>a from-scratch tribute to the 1979 Namco/Midway arcade machine · deconstructed in ../decon/</p>
+  </header>
+
+  <canvas id="screen"></canvas>
+
+  <footer>
+    <b>MOVE</b> ←/→ or A/D · <b>FIRE</b> Space/Z/X · <b>START</b> Enter or 1 · <b>MUTE</b> M · <b>PAUSE</b> P<br>
+    Convoy bonus: flagship with escorts = 300 · escorts first, flagship last = 800<br>
+    All engine code and pixel art original — see README.md for the fidelity notes.
+  </footer>
+
+  <script src="palette.js"></script>
+  <script src="art.js"></script>
+  <script src="starfield.js"></script>
+  <script src="audio.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

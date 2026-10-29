@@ -1,0 +1,13 @@
+# Namco ROM images and all ROM-derived artifacts — never commit
+*.bin
+*.bpr
+galmidw.*
+7l
+gfx.json
+tiles*.png
+sprites*.png
+disassembly_*
+mame_reference/
+roms/
+__pycache__/
+*.pyc
