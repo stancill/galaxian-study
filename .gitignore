@@ -11,3 +11,4 @@ mame_reference/
 roms/
 __pycache__/
 *.pyc
+.DS_Store
